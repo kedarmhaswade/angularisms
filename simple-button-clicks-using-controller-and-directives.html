@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title>Simple Button Clicks Using Controller and Builtin Directives</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body>
+  <div ng-controller="HelloController" class="span6 col-lg-offset-1"> <!-- 'binds' the controller in the JS file with this element -->
+    <h4>The simplest adding machine ever</h4>
+    <a ng-click="add(1)" class="btn btn-success">Add</a> <!-- ng-click directive gets access to $scope and functions in the controller above -->
+    <a ng-click="subtract(1)" class="btn btn-danger">Subtract</a> <!-- ng-click directive gets access to $scope and functions in the controller above -->
+    <h4>Current count: {{ counter }}</h4>
+  </div>
+  <script src="bower_components/angular/angular.js"> </script>
+  <script type="text/javascript" src="js/simple-button-clicks-using-controller-and-directives.js">
+  </script>
+
+  </div>
+  </body>
+</html>

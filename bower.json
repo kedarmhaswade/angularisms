@@ -1,0 +1,26 @@
+{
+  "name": "angularisms",
+  "version": "0.0.1",
+  "homepage": "https://github.com/kedarmhaswade/angularisms",
+  "authors": [
+    "Kedar Mhaswade <Kedar.Mhaswade@lithium.com>"
+  ],
+  "description": "learning angular",
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": ">=1.2.15",
+    "bootstrap": ">=3.1.1",
+    "ui.bootstrap": ">=0.10.0"
+  }
+}

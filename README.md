@@ -45,7 +45,7 @@ When we create a new controller on a page, Angular passes it a new $scope. This 
     var app = angular.module('app', []); // the app expressed as an Angular module
     app.controller('HelloController', function ($scope) {}); //create a controller that is attached when the ng-controller attribute on an html element says ng-controller='HelloController'
 ```
-Let us say our html is like this: [simple-button-clicks-using-controller-and-directives.html].
+Let us say our html is like this: [https://github.com/kedarmhaswade/angularisms/simple-button-clicks-using-controller-and-directives.html].
 
 One major distinction between AngularJS and other JavaScript frameworks is that the controller is _not_ the appropriate place to do _any DOM manipulation or formatting, data manipulation, or state maintenance_.
 It simply _holds the $scope/model_. It is simply the glue between the view and the $scope model.

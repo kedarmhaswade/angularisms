@@ -39,7 +39,9 @@ Controllers in AngularJS exist to augment the view of an AngularJS application.
 
 The controller in AngularJS is a _function_ that adds additional functionality to the scope of the view. We use it to set up an initial state and to add custom behavior to the _scope object_.
 
-When we create a new controller on a page, Angular passes it a new $scope. This new $scope is where we can set up the initial state of the scope on our controller. Since Angular takes care of handling the controller for us, we only need to write the constructor function. Setting up an initial controller _properly_ looks like this:
+When we create a new controller on a page, Angular passes it a new $scope.
+This new $scope is where we can set up the initial state of the scope on our controller.
+Since Angular takes care of handling the controller for us, we only need to write the constructor function. Setting up an initial controller _properly_ looks like this:
 
 ```javascript
     var app = angular.module('app', []); // the app expressed as an Angular module
@@ -47,5 +49,9 @@ When we create a new controller on a page, Angular passes it a new $scope. This 
 ```
 Let us say our html is like this: [https://github.com/kedarmhaswade/angularisms/simple-button-clicks-using-controller-and-directives.html].
 
-One major distinction between AngularJS and other JavaScript frameworks is that the controller is _not_ the appropriate place to do _any DOM manipulation or formatting, data manipulation, or state maintenance_.
-It simply _holds the $scope/model_. It is simply the glue between the view and the $scope model.
+One major distinction between AngularJS and other JavaScript frameworks is that the controller is _not_ the appropriate
+place to do _any DOM manipulation or formatting, data manipulation, or state maintenance_.
+It simply _holds the $scope/model_. It is the glue between the view and the $scope model.
+
+Angular uses scopes to isolate the functionality of the view, controllers, and directives
+(we’ll cover these later in the book), which makes it very easy to write tests for a specific piece of functionality.
